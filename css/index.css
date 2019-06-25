@@ -226,9 +226,6 @@ header h1 {
     width: 90%;
   }
 }
-.pitch {
-  border: 2px solid blue;
-}
 .pitch p {
   padding-top: 3rem;
   padding-right: 8.25rem;
@@ -238,20 +235,20 @@ header h1 {
   color: #DAF0EE;
 }
 .pitch .features {
-  color: #DAF0EE;
-  font-size: 2.5rem;
+  text-align: center;
+  color: #94D1BE;
+  font-size: 2.25rem;
   margin-bottom: 1.5rem;
   margin-left: 2rem;
   padding-top: 2rem;
   padding-bottom: 1rem;
-  border: 2px solid red;
 }
 .pitch .features ul {
+  color: #DAF0EE;
   list-style-type: circle;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  margin-left: 3rem;
-  border: 2px solid yellow;
+  margin-left: 2rem;
 }
 .pitch .features ul li {
   margin-top: 0.75rem;
@@ -294,7 +291,7 @@ header h1 {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  background-color: #94D1BE;
+  background-color: #9DB5B2;
   height: 350px;
 }
 .reviews h2 {

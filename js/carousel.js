@@ -1,61 +1,81 @@
 class Carousel {
-    constructor(carousel) {
-        this.carousel = carousel;
-        //references
-        this.left = document.querySelector('.left-button')
-        this.right = document.querySelector('.right-button')
-        this.imgs = document.querySelectorAll('.carousel img')
-        //current Index
-        this.currentIndex = 0;
-        //current img to display
-        this.currentImg = this.imgs[this.currentIndex];
-        this.currentImg.style.display = 'block';
-        //event listeners
-        this.left.addEventListener('click', () => this.previous());
-        this.right.addEventListener('click', () => this.next());
+    constructor(carouselElement) {
+
+        //assign this.carouselElement to carouselElement DOM reference
+        this.carouselElement = carouselElement;
+        //console.log('current carouselElement: ', this.carouselElement);
+
+        //left button
+        this.left = carouselElement.querySelector('.left-button');
+        //console.log('left button: ', this.left);
+
+        //right button
+        this.right = carouselElement.querySelector('.right-button');
+        //console.log('right button: ', this.right)
+
+        //get el w/ class img from carouselElement
+        this.images = carouselElement.querySelectorAll('.img');
+        //console.log('list of images: ', this.images);
+
+        //first img to show is last item in the img list (this.images)
+        this.index = this.images.length - 1;
+        //console.log('index of last el in this.images: ', this.index);
+
+        //add class 'on' to the last el in this.images by default
+        this.images[this.index].classList.add('on');
+        //console.log('the last img w/ on class added: ', this.images[this.index]);
+
+        //displays last el in this.images by default
+        this.images[this.index].style.display = 'block';
+
+        //if left arrow clicked, subtract one from this.index and call the selectLR() method
+        //console.logs what was clicked and the current value of this.index
+        this.left.addEventListener('click', () => { --this.index; this.selectLR(); console.log('clicked left', this.index) });
+        this.right.addEventListener('click', () => { ++this.index; this.selectLR(); console.log('clicked right', this.index) });
     }
-    previous() {
-        const imgs = document.querySelectorAll('.carousel img');
-        //display none on each image
-        imgs.forEach(image => image.style.display = 'none');
-        //currentIndex minus 1 when clicking left arrow
-        this.currentIndex -= 1;
-        //if the current index is less than 0 then loop to end
-        if (this.currentIndex < 0) {
-            this.currentIndex = 3;
+    //selectLR stands for select(ed) Left or Right(button)
+    selectLR() {
+        //removes the 'on' class from every image
+        this.images.forEach((image) => { image.classList.remove('on'); image.style.display = 'none' })
+
+        //this.index is greater than the length of this.images array -1
+        if (this.index > this.images.length - 1) {
+
+            //adds the class 'on' to the first el in this.images
+            this.images[0].classList.add('on');
+            //console.log("this.images[0] w/ class 'on'", this.images[0])
+
+            //resets the index to 0
+            this.index = 0;
+
+            //this.index is a negative number(least neg value possible is -1)
+        } else if (this.index < 0) {
+
+            //adds 'on' class to last el in this.images
+            this.images[this.images.length - 1].classList.add('on');
+            //console.log("this.images[this.images.length-1] w/ class 'on'", this.images[this.images.length-1])
+
+            //resets index to equal the length of this.images-1
+            this.index = this.images - length - 1;
+
+            //this.index is w/in the bounds of this.images list
+        } else {
+
+            //adds 'on' class to the image at this.index
+            this.images[this.index].classList.add('on');
         }
-        //if the current index is greater than 3 then loop to beginning (since theres only 4 images total)
-        //could use imgs.length etc.
-        if (this.currentIndex > 3) {
-            this.currentIndex = 0;
-        }
-        //displays block on the current image on the current index
-        this.imgs[this.currentIndex].style.display = 'block';
-    }
-    next() {
-        const imgs = document.querySelectorAll('.carousel img');
-        //display none for each image
-        imgs.forEach(image => image.style.display = 'none');
-        //currentindex + 1 when clicking next arrow
-        this.currentIndex += 1;
-        if (this.currentIndex < 0) {
-            this.currentIndex = 3;
-        }
-        if (this.currentIndex > 3) {
-            this.currentIndex = 0;
-        }
-        this.imgs[this.currentIndex].style.display = 'block';
+
+        //loops through the images to find the img w/ the class 'on' and displayes that img
+        this.images.forEach((image) => {
+            if (image.classList[0] === 'on') {
+                image.style.display = 'block';
+            }
+        })
     }
 }
+// gets the element with carousel class
+let carousel = document.querySelector(".carousel");
+// console.log(“carousel element”, carousel)
 
-let carousel = document.querySelectorAll('.carousel').forEach(carousel => new Carousel(carousel));
-
-
-/* If You've gotten this far, you're on your own! Although we will give you some hints:
-    1. You will need to grab a reference to the carousel, and in it grab the left and right buttons
-    2. You will need to grab a reference to all of the images
-    3. Create a current index
-    4. Those buttons are gonna need some click handlers.
-    5. Think of how you would animate this component. Make the cards slide in and out, or fade. It's up to you!
-    6. Have fun!
-*/
+// makes carousel and instance of the class Carousel
+new Carousel(carousel);
