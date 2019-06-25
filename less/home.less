@@ -8,46 +8,16 @@
     background-color: @cambridgeBlue;
 
     @media @mobile{
-        width: 99%;
+        width: 90%;
     }
 }
-.menu {
-    height: 1000px;
-    width: 100%;
-    background-color: @blackOlive;
-    opacity: 0.98;
-    margin: 0 auto;
-    position: absolute;
-    z-index: 1;
-    display: none;
-    
-    .menu-items {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        margin: 19rem auto;
-    
-        a {
-            font-size: 8rem;
-            color: white;
-            text-decoration: none;
-            margin: 4rem auto;
-            &:hover{
-                color: @blackOlive;
-            }
-        }
-    }
-}
-.menu--open {
-    display: block;
-}
+
 .pitch {
     p {
-        padding-top: 3.5rem;
+        padding-top: 3rem;
         padding-right: 8.25rem;
         padding-left: 8.25rem;
-        font-size: 1.8rem;
+        font-size: 2rem;
         text-align: center;
         color: @blackOlive;
     }
@@ -87,7 +57,20 @@
         //border: 2px solid blue;
     }    
 }
-
+.reviews {
+    font-size: 3.5rem;
+    padding-left: 2rem;
+    color: @azureishWhite;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: @pearlAqua;
+    height: 350px;
+    h2 {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+    }
+}
 .bottom-content-container {
     display: flex;
     flex-flow: row wrap;
@@ -102,7 +85,7 @@
         
         h3 {
             font-size: 3rem;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
             text-align: center;
             width: 100%;
         }

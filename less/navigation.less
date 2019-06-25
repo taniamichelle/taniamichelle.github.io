@@ -12,9 +12,10 @@ header {
     }
 }
 .menu {
-    height: 1000px;
-    width: 100%;
+    height: 400px;
+    width: 25%;
     background-color: @blackOlive;
+    align-items: right;
     opacity: 0.98;
     margin: 0 auto;
     position: absolute;
@@ -26,21 +27,28 @@ header {
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        margin: 19rem auto;
+        margin: 2rem auto;
     
         a {
-            font-size: 8rem;
-            color: white;
+            font-size: 2.25rem;
+            color: @azureishWhite;
             text-decoration: none;
-            margin: 4rem auto;
+            margin: 3.5rem;
             &:hover{
-                color: @blackOlive;
+                color: @pearlAqua;
             }
         }
     }
 }
 .menu--open {
     display: block;
+    height: 400px;
+    width: 18%;
+    margin-top: 2rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    justify-content: right;
+    border: 2px solid white;
 }
 .menu-button {
     height: 2rem;

@@ -5,16 +5,15 @@ let toggleMenu = () => {
 }
 
 //reference menu
-const menu = document.querySelector('.menu');
+let menu = document.querySelector('.menu');
 console.log(menu);
 
 //reference menu Button
 const menuButton = document.querySelector('.menu-button');
 menuButton.addEventListener('click', toggleMenu);
-console.log(menuButton);
+console.log('click', menuButton);
 
 //reference menu Button close
-
 const menuClose = document.querySelector('.menu-button-close');
 menuClose.addEventListener('click', toggleMenu);
 console.log(menuClose);

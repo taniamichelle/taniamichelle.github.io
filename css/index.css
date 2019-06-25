@@ -163,9 +163,10 @@ header h1 {
   font-size: 5rem;
 }
 .menu {
-  height: 1000px;
-  width: 100%;
+  height: 400px;
+  width: 25%;
   background-color: #3B413C;
+  align-items: right;
   opacity: 0.98;
   margin: 0 auto;
   position: absolute;
@@ -177,19 +178,26 @@ header h1 {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  margin: 19rem auto;
+  margin: 2rem auto;
 }
 .menu .menu-items a {
-  font-size: 8rem;
-  color: white;
+  font-size: 2.25rem;
+  color: #DAF0EE;
   text-decoration: none;
-  margin: 4rem auto;
+  margin: 3.5rem;
 }
 .menu .menu-items a:hover {
-  color: #3B413C;
+  color: #94D1BE;
 }
 .menu--open {
   display: block;
+  height: 400px;
+  width: 18%;
+  margin-top: 2rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  justify-content: right;
+  border: 2px solid white;
 }
 .menu-button {
   height: 2rem;
@@ -207,45 +215,16 @@ header h1 {
   position: relative;
   background-color: #9DB5B2;
 }
-@media (max-width:39rem) {
+@media (max-width:500px) {
   .container {
-    width: 99%;
+    width: 90%;
   }
 }
-.menu {
-  height: 1000px;
-  width: 100%;
-  background-color: #3B413C;
-  opacity: 0.98;
-  margin: 0 auto;
-  position: absolute;
-  z-index: 1;
-  display: none;
-}
-.menu .menu-items {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  margin: 19rem auto;
-}
-.menu .menu-items a {
-  font-size: 8rem;
-  color: white;
-  text-decoration: none;
-  margin: 4rem auto;
-}
-.menu .menu-items a:hover {
-  color: #3B413C;
-}
-.menu--open {
-  display: block;
-}
 .pitch p {
-  padding-top: 3.5rem;
+  padding-top: 3rem;
   padding-right: 8.25rem;
   padding-left: 8.25rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
   color: #3B413C;
 }
@@ -279,6 +258,20 @@ header h1 {
   width: 48.58%;
   height: 3.5rem;
 }
+.reviews {
+  font-size: 3.5rem;
+  padding-left: 2rem;
+  color: #DAF0EE;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  background-color: #94D1BE;
+  height: 350px;
+}
+.reviews h2 {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
 .bottom-content-container {
   display: flex;
   flex-flow: row wrap;
@@ -293,7 +286,7 @@ header h1 {
 }
 .bottom-content-container .text h3 {
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
   width: 100%;
 }
@@ -311,7 +304,7 @@ header h1 {
   border-radius: 12px;
   border: 2px solid #3B413C;
 }
-@media (max-width:39rem) {
+@media (max-width:500px) {
   .bottom-content-container .btn {
     width: 100%;
     padding-top: 2rem;
