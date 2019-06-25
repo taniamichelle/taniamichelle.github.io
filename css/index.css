@@ -149,7 +149,7 @@ html {
   font-weight: 700;
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
 }
-.navigation {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -159,8 +159,37 @@ html {
   z-index: 2;
   height: 8rem;
 }
-h2 {
+header h1 {
   font-size: 5rem;
+}
+.menu {
+  height: 1000px;
+  width: 100%;
+  background-color: #3B413C;
+  opacity: 0.98;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+.menu .menu-items {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 19rem auto;
+}
+.menu .menu-items a {
+  font-size: 8rem;
+  color: white;
+  text-decoration: none;
+  margin: 4rem auto;
+}
+.menu .menu-items a:hover {
+  color: #3B413C;
+}
+.menu--open {
+  display: block;
 }
 .menu-button {
   height: 2rem;
@@ -209,7 +238,7 @@ h2 {
 .menu .menu-items a:hover {
   color: #3B413C;
 }
-.menu-selected {
+.menu--open {
   display: block;
 }
 .pitch p {

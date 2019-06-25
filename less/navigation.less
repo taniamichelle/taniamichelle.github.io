@@ -1,4 +1,4 @@
-.navigation{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,15 +6,46 @@
     background-color: @pearlAqua;
     color: @white;
     z-index: 2;
-    height: 8rem;
+    height: 8rem; 
+    h1 {
+        font-size: 5rem;
+    }
 }
-h2{
-    font-size: 5rem;
+.menu {
+    height: 1000px;
+    width: 100%;
+    background-color: @blackOlive;
+    opacity: 0.98;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    
+    .menu-items {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        margin: 19rem auto;
+    
+        a {
+            font-size: 8rem;
+            color: white;
+            text-decoration: none;
+            margin: 4rem auto;
+            &:hover{
+                color: @blackOlive;
+            }
+        }
+    }
 }
-.menu-button{
+.menu--open {
+    display: block;
+}
+.menu-button {
     height: 2rem;
     cursor: pointer;
 }
-.menu-button-close{
+.menu-button-close {
     cursor: pointer;
 }
