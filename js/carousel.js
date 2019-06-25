@@ -14,7 +14,7 @@ class Carousel {
         //console.log('right button: ', this.right)
 
         //get el w/ class img from carouselElement
-        this.images = carouselElement.querySelectorAll('.img');
+        this.images = carouselElement.querySelectorAll('img');
         //console.log('list of images: ', this.images);
 
         //first img to show is last item in the img list (this.images)
@@ -37,13 +37,14 @@ class Carousel {
     selectLR() {
         //removes the 'on' class from every image
         this.images.forEach((image) => { image.classList.remove('on'); image.style.display = 'none' })
+        console.log(this.images)
 
         //this.index is greater than the length of this.images array -1
         if (this.index > this.images.length - 1) {
 
             //adds the class 'on' to the first el in this.images
             this.images[0].classList.add('on');
-            //console.log("this.images[0] w/ class 'on'", this.images[0])
+            //console.log("this.images[0] w/ class 'on'", this.images[0]);
 
             //resets the index to 0
             this.index = 0;
