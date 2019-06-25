@@ -1,0 +1,76 @@
+.container {
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: Roboto, Arial, sans-serif;
+    position: relative;
+
+    @media @mobile{
+        width: 99%;
+    }
+}
+.menu {
+    height: 1000px;
+    width: 100%;
+    background-color: @pearlAqua;
+    opacity: 0.98;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    
+    .menu-items {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        margin: 19rem auto;
+    
+        a {
+            font-size: 8rem;
+            color: white;
+            text-decoration: none;
+            margin: 4rem auto;
+            &:hover{
+                color: @blackOlive;
+            }
+        }
+    }
+}
+.menu-selected {
+    display: block;
+}
+.top-content-container {
+    font-size: 2.2rem;
+    width: 100%;
+    border: 2px solid red;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .find {   
+        color: @blackOlive;
+        background-color: @pearlAqua;
+        margin-top: 4rem;
+        margin-right: 0.2rem;
+        margin-bottom: 4rem;
+        padding-top: 1.8rem;
+        padding-left: 1.5rem;
+        width: 47.6%;
+        height: 3.5rem;
+        border: 2px solid blue;
+    }    
+
+    .near {   
+        color: @blackOlive;
+        background-color: @pearlAqua;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding-top: 1.8rem;
+        padding-left: 1.5rem;
+        width: 47.8%;
+        height: 3.5rem;
+        border: 2px solid blue;
+    }    
+}
+

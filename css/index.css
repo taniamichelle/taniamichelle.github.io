@@ -137,18 +137,6 @@ table {
 html {
   font-size: 62.5%;
 }
-.container {
-  max-width: 880px;
-  width: 100%;
-  margin: 0 auto;
-  font-family: Roboto, Arial, sans-serif;
-  position: relative;
-}
-@media (max-width:39rem) {
-  .container {
-    width: 99%;
-  }
-}
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -171,7 +159,7 @@ html {
   z-index: 2;
 }
 h2 {
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 .menu-button {
   height: 2rem;
@@ -180,10 +168,22 @@ h2 {
 .menu-button-close {
   cursor: pointer;
 }
+.container {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: Roboto, Arial, sans-serif;
+  position: relative;
+}
+@media (max-width:39rem) {
+  .container {
+    width: 99%;
+  }
+}
 .menu {
   height: 1000px;
   width: 100%;
-  background-color: #9DB5B2;
+  background-color: #94D1BE;
   opacity: 0.98;
   margin: 0 auto;
   position: absolute;
@@ -208,4 +208,35 @@ h2 {
 }
 .menu-selected {
   display: block;
+}
+.top-content-container {
+  font-size: 2.2rem;
+  width: 100%;
+  border: 2px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.top-content-container .find {
+  color: #3B413C;
+  background-color: #94D1BE;
+  margin-top: 4rem;
+  margin-right: 0.2rem;
+  margin-bottom: 4rem;
+  padding-top: 1.8rem;
+  padding-left: 1.5rem;
+  width: 47.6%;
+  height: 3.5rem;
+  border: 2px solid blue;
+}
+.top-content-container .near {
+  color: #3B413C;
+  background-color: #94D1BE;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-top: 1.8rem;
+  padding-left: 1.5rem;
+  width: 47.8%;
+  height: 3.5rem;
+  border: 2px solid blue;
 }

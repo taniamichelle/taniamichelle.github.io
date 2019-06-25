@@ -31,47 +31,38 @@ article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section{
     display:block;
 }
-body{
+body {
     line-height:1;
 }
-ol,ul{
+ol,ul {
     list-style:none;
 }
-blockquote,q{
+blockquote,q {
     quotes:none;
 }
 blockquote:before,blockquote:after,
-q:before,q:after{
+q:before,q:after {
     content:’’;
     content:none;
 }
-ins{
+ins {
     text-decoration:none;
 }
-del{
+del {
     text-decoration:line-through;
 }
 
-table{
+table {
     border-collapse:collapse;
     border-spacing:0;
 }
 
 /* Your Code Goes Here */
-html{
+html {
     font-size: 62.5%;
 }
 
-.container {
-    max-width: 880px;
-    width: 100%;
-    margin: 0 auto;
-    font-family: Roboto, Arial, sans-serif;
-    position: relative;
-    @media @mobile{
-        width: 99%;
-    }
-}
+
 //Fonts
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 
@@ -90,36 +81,4 @@ html{
 
 //Contact Page
 @import 'contact.less';
-
-.menu{
-    height: 1000px;
-    width: 100%;
-    background-color: @cambridgeBlue;
-    opacity: 0.98;
-    margin: 0 auto;
-    position: absolute;
-    z-index: 1;
-    display: none;
-    
-    .menu-items{
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        margin: 19rem auto;
-    
-        a{
-            font-size: 8rem;
-            color: white;
-            text-decoration: none;
-            margin: 4rem auto;
-            &:hover{
-                color: @blackOlive;
-            }
-        }
-    }
-}
-.menu-selected{
-    display: block;
-}
 

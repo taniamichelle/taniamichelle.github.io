@@ -3,7 +3,6 @@ let toggleMenu = () => {
     menu.classList.toggle('menu-selected');
 }
 
-
 //reference menu
 let menu = document.querySelector('.menu');
 
