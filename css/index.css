@@ -170,6 +170,16 @@ header .loginBtn {
   border-radius: 12px;
   color: #DAF0EE;
 }
+@media (max-width:500px) {
+  header .loginBtn {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+    border-radius: 6px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
 .menu {
   height: 400px;
   width: 25%;
@@ -238,7 +248,7 @@ header .loginBtn {
   height: 20rem;
   justify-content: space-between;
   font-size: 2rem;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
 }
 .container .pitch .purpose {
   display: flex;
@@ -474,7 +484,7 @@ header .loginBtn {
 .container {
   max-width: 1200px;
   width: 100%;
-  height: 900px;
+  height: 2175px;
   margin: 0 auto;
   font-family: Roboto, Arial, sans-serif;
   position: relative;
@@ -549,12 +559,14 @@ header h1 {
   flex-flow: row nowrap;
   justify-content: center;
   padding-top: 3.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .about p {
   font-size: 3rem;
   color: #DAF0EE;
-  padding-top: 2.5rem;
   display: flex;
+  padding-top: 0.5rem;
   flex-flow: row nowrap;
   justify-content: center;
 }
@@ -564,8 +576,20 @@ header h1 {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  width: 50%;
+  width: 45%;
   color: #DAF0EE;
+}
+.about .box {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  height: 300px;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 2rem;
+  background-color: #94D1BE;
 }
 .carousel {
   width: 90%;
