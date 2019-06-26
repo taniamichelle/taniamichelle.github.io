@@ -17,3 +17,15 @@ console.log('click', menuButton);
 const menuClose = document.querySelector('.menu-button-close');
 menuClose.addEventListener('click', toggleMenu);
 console.log(menuClose);
+
+const h1Color = document.getElementsByTagName('h1');
+
+h1Color[0].addEventListener('mouseover', function (e) {
+    e.target.style.backgroundColor = 'cambridge blue';
+    e.stopPropagation();
+});
+
+h1Color[1].addEventListener('mouseover', function (e) {
+    e.target.style.backgroundColor = 'cambridge blue';
+    e.stopPropagation();
+});

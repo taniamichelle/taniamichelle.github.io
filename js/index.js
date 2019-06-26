@@ -18,4 +18,27 @@ const menuClose = document.querySelector('.menu-button-close');
 menuClose.addEventListener('click', toggleMenu);
 //console.log(menuClose);
 
-//carousel
+//TweenMax 
+//header should bounce to a larger size in 3sec
+TweenMax.to('.container header h1', 3, {
+    scale: 1.075, ease: Bounce.easeOut
+});
+
+
+//mouseover: h2 
+const h2Color = document.querySelectorAll('h2');
+
+h2Color[0].addEventListener('mouseover', function (e) {
+    e.target.style.backgroundColor = 'cambridge blue';
+    e.stopPropagation();
+});
+
+h2Color[1].addEventListener('mouseover', function (e) {
+    e.target.style.backgroundColor = 'cambridge blue';
+    e.stopPropagation();
+});
+
+h2Color[2].addEventListener('mouseover', function (e) {
+    e.target.style.backgroundColor = 'cambridge blue';
+    e.stopPropagation();
+});
