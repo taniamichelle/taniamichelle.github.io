@@ -154,7 +154,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 7rem;
-  background-color: #94D1BE;
   color: #DAF0EE;
   z-index: 2;
   height: 8rem;
@@ -165,13 +164,30 @@ header h1 {
 }
 header .loginBtn {
   font-size: 2.5rem;
-  background-color: #3B413C;
+  background-color: #94D1BE;
   padding: 0.8rem 0.8rem 0.8rem 0.8rem;
   border-radius: 12px;
-  color: #DAF0EE;
+  color: #3B413C;
 }
 @media (max-width:500px) {
   header .loginBtn {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+    border-radius: 6px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+header .signUpBtn {
+  font-size: 2.5rem;
+  background-color: #94D1BE;
+  padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+  border-radius: 12px;
+  color: #3B413C;
+}
+@media (max-width:500px) {
+  header .signUpBtn {
     font-size: 1.4rem;
     text-align: center;
     padding: 0.6rem 0.6rem 0.6rem 0.6rem;
@@ -230,7 +246,7 @@ header .loginBtn {
 .container {
   max-width: 1200px;
   width: 100%;
-  height: 1000px;
+  height: 200px;
   margin: 0 auto;
   font-family: Roboto, Arial, sans-serif;
   position: relative;
@@ -268,10 +284,11 @@ header .loginBtn {
 }
 .container .pitch h2 {
   width: 100%;
-  color: #94D1BE;
+  color: #3B413C;
   margin-bottom: 0.5rem;
   height: 3rem;
   padding-left: 2.5rem;
+  border: 2px solid yellow;
   font-size: 3rem;
 }
 .container .pitch p {
@@ -358,60 +375,6 @@ header .loginBtn {
     height: 500px;
   }
 }
-.container .top-content-container {
-  font-size: 2.2rem;
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-@media (max-width:500px) {
-  .container .top-content-container {
-    border: 2px solid #94D1BE;
-    justify-content: center;
-    width: 100%;
-    background-color: #3B413C;
-    margin-bottom: 2rem;
-    margin-top: 0px;
-  }
-}
-.container .top-content-container .find {
-  color: #3B413C;
-  background-color: #94D1BE;
-  margin-top: 4rem;
-  margin-right: 0.05rem;
-  margin-bottom: 4rem;
-  padding-top: 1.8rem;
-  padding-left: 1.5rem;
-  width: 48.8%;
-  height: 5rem;
-}
-@media (max-width:500px) {
-  .container .top-content-container .find {
-    border: 2px solid #94D1BE;
-    justify-content: center;
-    width: 100%;
-  }
-}
-.container .top-content-container .near {
-  color: #3B413C;
-  background-color: #94D1BE;
-  margin-top: 4rem;
-  margin-right: auto;
-  margin-bottom: 4rem;
-  margin-left: auto;
-  padding-top: 1.8rem;
-  padding-left: 1.5rem;
-  width: 48.58%;
-  height: 5rem;
-}
-@media (max-width:500px) {
-  .container .top-content-container .near {
-    border: 2px solid #94D1BE;
-    justify-content: center;
-    width: 100%;
-  }
-}
 .container .reviews {
   font-size: 3.5rem;
   padding-left: 2rem;
@@ -419,7 +382,7 @@ header .loginBtn {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  background-color: #9DB5B2;
+  background-color: #94D1BE;
   height: 350px;
 }
 .container .reviews h2 {
@@ -484,31 +447,31 @@ header .loginBtn {
 .container {
   max-width: 1200px;
   width: 100%;
-  height: 2310px;
+  height: 5010px;
   margin: 0 auto;
   font-family: Roboto, Arial, sans-serif;
   position: relative;
-  background-color: #3B413C;
+  background-color: #9DB5B2;
+  border: 2px solid red;
 }
 @media (max-width:500px) {
   .container {
     width: 90%;
   }
 }
-header {
+.container header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 7rem;
-  background-color: #94D1BE;
   color: #DAF0EE;
   z-index: 2;
   height: 8rem;
 }
-header h1 {
+.container header h1 {
   font-size: 5rem;
 }
-.menu {
+.container .menu {
   height: 400px;
   width: 25%;
   background-color: #9DB5B2;
@@ -519,23 +482,23 @@ header h1 {
   z-index: 1;
   display: none;
 }
-.menu .menu-items {
+.container .menu .menu-items {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   margin: 2rem auto;
 }
-.menu .menu-items a {
+.container .menu .menu-items a {
   font-size: 2.25rem;
   color: #3B413C;
   text-decoration: none;
   margin: 3.5rem;
 }
-.menu .menu-items a:hover {
+.container .menu .menu-items a:hover {
   color: #94D1BE;
 }
-.menu--open {
+.container .menu--open {
   display: block;
   height: 400px;
   width: 18%;
@@ -545,12 +508,12 @@ header h1 {
   justify-content: right;
   border: 2px solid white;
 }
-.menu-button {
+.container .menu-button {
   height: 2rem;
   cursor: pointer;
 }
 @media (max-width:500px) {
-  .about {
+  .container .about {
     width: 90%;
     display: flex;
     flex-flow: row wrap;
@@ -558,9 +521,9 @@ header h1 {
     margin-left: auto;
   }
 }
-.about h1 {
+.container .about h1 {
   font-size: 4rem;
-  color: #94D1BE;
+  color: #3B413C;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -569,20 +532,20 @@ header h1 {
   margin-bottom: 2rem;
 }
 @media (max-width:500px) {
-  .about h1 {
+  .container .about h1 {
     justify-content: center;
   }
 }
-.about p {
+.container .about p {
   font-size: 3rem;
-  color: #DAF0EE;
+  color: #3B413C;
   display: flex;
   padding-top: 0.5rem;
   flex-flow: row nowrap;
   justify-content: center;
   margin-bottom: 5rem;
 }
-.about .box {
+.container .about .box {
   display: flex;
   flex-flow: row wrap;
   width: 90%;
@@ -594,7 +557,7 @@ header h1 {
   padding-bottom: 2rem;
   background-color: #94D1BE;
 }
-.about .box img {
+.container .about .box img {
   padding-top: 2rem;
   padding-bottom: 2rem;
   justify-content: center;
@@ -604,13 +567,13 @@ header h1 {
   border: 2px solid #9DB5B2;
 }
 @media (max-width:500px) {
-  .about .box img {
+  .container .about .box img {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
   }
 }
-.about .box h2 {
+.container .about .box h2 {
   width: 47%;
   font-size: 2rem;
   margin-top: 2.5rem;
@@ -620,7 +583,7 @@ header h1 {
   box-shadow: 5px 7px 5px 8px #3B413C;
 }
 @media (max-width:500px) {
-  .about .box h2 {
+  .container .about .box h2 {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
@@ -703,6 +666,7 @@ header h1 {
   text-align: center;
   margin-top: 3rem;
   width: 100%;
+  color: #3B413C;
 }
 .contact p {
   font-size: 3rem;
@@ -713,6 +677,7 @@ header h1 {
   padding-bottom: 1rem;
 }
 .contact .contactInfo {
+  color: #3B413C;
   font-size: 2.5rem;
   text-align: center;
   margin-top: 5rem;
@@ -720,10 +685,14 @@ header h1 {
   padding-bottom: 1rem;
 }
 .carousel {
-  width: 90%;
-  height: 570px;
-  margin-left: auto;
+  width: 100%;
+  height: 770px;
+  margin-top: 2rem;
   margin-right: auto;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  padding-top: 6rem;
+  background-color: #3B413C;
 }
 @media (max-width:500px) {
   .carousel {
@@ -748,10 +717,10 @@ header h1 {
 }
 .carousel .left-button {
   font-size: 8rem;
-  color: #94D1BE;
+  color: #DAF0EE;
 }
 .carousel .right-button {
   font-size: 8rem;
-  color: #94D1BE;
+  color: #DAF0EE;
   text-align: right;
 }

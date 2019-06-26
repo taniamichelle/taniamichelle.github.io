@@ -3,7 +3,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 7rem;
-    background-color: @pearlAqua;
     color: @azureishWhite;
     z-index: 2;
     height: 8rem; 
@@ -13,10 +12,25 @@ header {
     }
     .loginBtn{
         font-size: 2.5rem;
-        background-color: @blackOlive;
+        background-color: @pearlAqua;
         padding: 0.8rem 0.8rem 0.8rem 0.8rem;
         border-radius: 12px;
-        color: @azureishWhite;
+        color: @blackOlive;
+        @media @mobile {
+            font-size: 1.4rem;
+            text-align: center;
+            padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+            border-radius: 6px;
+            margin-left: 3rem;
+            margin-right: 3rem;
+        }
+    }
+    .signUpBtn{
+        font-size: 2.5rem;
+        background-color: @pearlAqua;
+        padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+        border-radius: 12px;
+        color: @blackOlive;
         @media @mobile {
             font-size: 1.4rem;
             text-align: center;
