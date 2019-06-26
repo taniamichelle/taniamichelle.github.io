@@ -1,11 +1,12 @@
 .container {
     max-width: 1200px;
     width: 100%;
-    height: 600rem;
+    height: 2000px;
     margin: 0 auto;
     font-family: Roboto, Arial, sans-serif;
     position: relative;
     background-color: @cambridgeBlue;
+    border: 2px solid pink;
 
     @media @mobile{
         width: 90%;
@@ -17,18 +18,19 @@
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    height: 24rem;
+    height: 20rem;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-size: 2rem;
+    margin-top: 1rem;
     .purpose {
         display: flex;
         flex-flow: row wrap;
         width: 47%;
-        height: 19rem;
+        height: 17rem;
         padding-top: 2rem;
         padding-right: 2rem;
-        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
         padding-left: 2rem;
         text-align: center;
         border: 2px solid red;
@@ -43,37 +45,43 @@
         p {
             color: @azureishWhite;
         }
-    .features {
-        display: flex;
-        flex-flow: row nowrap;
-        width: 48%;
-        height: 19rem;
+}
+.features {
+    display: flex;
+    flex-flow: row wrap;
+    color: @azureishWhite;
+    align-items: center;
+    width: 48%;
+    height: 18rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    border: 2px solid red;
+    h2 {
+        color: @pearlAqua;
+        width: 100%;
         text-align: center;
-        margin-bottom: 1.5rem;
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-        padding-left: 1rem;
-        border: 2px solid red;
-        h2 {
-            color: @pearlAqua;
-            width: 100%;
-            text-align: center;
-            border: 2px solid yellow;
-        ul {
-            color: @azureishWhite;
-            list-style-type: circle; 
-            margin-top: 1rem;
-            margin-bottom: 2rem;
-            margin-left: 2rem;
+        border: 2px solid yellow;
+        font-size: 3rem;
+    ul {
+        width: 100%;
+        color: @azureishWhite;
+        list-style-type: circle; 
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        border: 2px solid green;
+        li {
+            margin-top: 0.75rem;
+            margin-bottom: 0.75rem;
+            text-align: left;
             border: 2px solid green;
-            li {
-                margin-top: 0.75rem;
-                margin-bottom: 0.75rem;
-                text-align: left;
-            }
         }
     }
 }
+
 .top-content-container {
     font-size: 2.2rem;
     width: 100%;
@@ -168,4 +176,4 @@
     flex-flow: row wrap;
     justify-content: center;
     margin-top: 5rem;
-}
+}}}
