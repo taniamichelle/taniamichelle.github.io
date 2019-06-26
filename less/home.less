@@ -1,0 +1,179 @@
+.container {
+    max-width: 1200px;
+    width: 100%;
+    height: 2000px;
+    margin: 0 auto;
+    font-family: Roboto, Arial, sans-serif;
+    position: relative;
+    background-color: @cambridgeBlue;
+    border: 2px solid pink;
+
+    @media @mobile{
+        width: 90%;
+    }
+}
+
+.pitch {
+    border: 2px solid blue;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 20rem;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    .purpose {
+        display: flex;
+        flex-flow: row wrap;
+        width: 47%;
+        height: 17rem;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 0.5rem;
+        padding-left: 2rem;
+        text-align: center;
+        border: 2px solid red;
+        h2 {
+            width: 100%;
+            color: @pearlAqua;
+            margin-bottom: 0.5rem;
+            height: 3rem;
+            border: 2px solid yellow;
+            font-size: 3rem;
+        }
+        p {
+            color: @azureishWhite;
+        }
+}
+.features {
+    display: flex;
+    flex-flow: row wrap;
+    color: @azureishWhite;
+    align-items: center;
+    width: 48%;
+    height: 18rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    border: 2px solid red;
+    h2 {
+        color: @pearlAqua;
+        width: 100%;
+        text-align: center;
+        border: 2px solid yellow;
+        font-size: 3rem;
+    ul {
+        width: 100%;
+        color: @azureishWhite;
+        list-style-type: circle; 
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        border: 2px solid green;
+        li {
+            margin-top: 0.75rem;
+            margin-bottom: 0.75rem;
+            text-align: left;
+            border: 2px solid green;
+        }
+    }
+}
+
+.top-content-container {
+    font-size: 2.2rem;
+    width: 100%;
+    //border: 2px solid red;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .find {   
+        color: @blackOlive;
+        background-color: @pearlAqua;
+        margin-top: 4rem;
+        margin-right: 0.05rem;
+        margin-bottom: 4rem;
+        padding-top: 1.8rem;
+        padding-left: 1.5rem;
+        width: 48.8%;
+        height: 3.5rem;
+        //border: 2px solid blue;
+    }    
+
+    .near {   
+        color: @blackOlive;
+        background-color: @pearlAqua;
+        margin-top: 4rem;
+        margin-right: auto;
+        margin-bottom: 4rem;
+        margin-left: auto;
+        padding-top: 1.8rem;
+        padding-left: 1.5rem;
+        width: 48.58%;
+        height: 3.5rem;
+        //border: 2px solid blue;
+    }    
+}
+.reviews {
+    font-size: 3.5rem;
+    padding-left: 2rem;
+    color: @azureishWhite;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: @cambridgeBlue;
+    height: 350px;
+    h2 {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+    }
+}
+.bottom-content-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    .text {
+        margin-top: 3rem;
+        color: @azureishWhite; 
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        
+        h3 {
+            font-size: 3rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .btn {
+        width: 9.5rem;
+        height: 1.5rem;
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: @azureishWhite;
+        color: @blackOlive;
+        padding-top: 1rem;
+        padding-left: 3.5rem;
+        padding-right: 3rem;
+        padding-bottom: 1rem;
+        border-radius: 12px;
+        border: 2px solid @blackOlive;
+        
+        @media @mobile {
+            .btn-dimensions(100%, 2rem, 13.5rem);
+        }
+    }  
+}
+
+.footer-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 5rem;
+}}}
