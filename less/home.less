@@ -1,7 +1,7 @@
 .container {
     max-width: 1200px;
     width: 100%;
-    height: 900px;
+    height: 600rem;
     margin: 0 auto;
     font-family: Roboto, Arial, sans-serif;
     position: relative;
@@ -13,34 +13,63 @@
 }
 
 .pitch {
-    //border: 2px solid blue;
-    p {
-        padding-top: 3rem;
-        padding-right: 8.25rem;
-        padding-left: 8.25rem;
-        font-size: 2rem;
+    border: 2px solid blue;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 24rem;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    .purpose {
+        display: flex;
+        flex-flow: row wrap;
+        width: 47%;
+        height: 19rem;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
         text-align: center;
-        color: @azureishWhite;
-    }
+        border: 2px solid red;
+        h2 {
+            width: 100%;
+            color: @pearlAqua;
+            margin-bottom: 0.5rem;
+            height: 3rem;
+            border: 2px solid yellow;
+            font-size: 3rem;
+        }
+        p {
+            color: @azureishWhite;
+        }
     .features {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 48%;
+        height: 19rem;
         text-align: center;
-        color: @pearlAqua;
-        font-size: 2.25rem;
         margin-bottom: 1.5rem;
-        margin-left:2rem;
         padding-top: 2rem;
         padding-bottom: 1rem;
-        //border: 2px solid red;
+        padding-left: 1rem;
+        border: 2px solid red;
+        h2 {
+            color: @pearlAqua;
+            width: 100%;
+            text-align: center;
+            border: 2px solid yellow;
         ul {
             color: @azureishWhite;
             list-style-type: circle; 
-            margin-top: 2rem;
+            margin-top: 1rem;
             margin-bottom: 2rem;
             margin-left: 2rem;
-            //border: 2px solid yellow;
+            border: 2px solid green;
             li {
                 margin-top: 0.75rem;
                 margin-bottom: 0.75rem;
+                text-align: left;
             }
         }
     }
@@ -139,6 +168,4 @@
     flex-flow: row wrap;
     justify-content: center;
     margin-top: 5rem;
-    margin-right: auto;
-    margin-left: auto;
 }
