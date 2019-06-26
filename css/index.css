@@ -149,6 +149,9 @@ html {
   font-weight: 700;
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
 }
+.width-100 {
+  width: 100%;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -246,7 +249,6 @@ header .signUpBtn {
 .container {
   max-width: 1200px;
   width: 100%;
-  height: 200px;
   margin: 0 auto;
   font-family: Roboto, Arial, sans-serif;
   position: relative;
@@ -282,13 +284,12 @@ header .signUpBtn {
     justify-content: center;
   }
 }
-.container .pitch h2 {
+.container .pitch .purpose h2 {
   width: 100%;
   color: #3B413C;
   margin-bottom: 0.5rem;
   height: 3rem;
   padding-left: 2.5rem;
-  border: 2px solid yellow;
   font-size: 3rem;
 }
 .container .pitch p {
@@ -325,7 +326,7 @@ header .signUpBtn {
   }
 }
 .container .pitch h2 {
-  color: #94D1BE;
+  color: #3B413C;
   width: 100%;
   text-align: center;
   font-size: 3rem;
@@ -444,7 +445,7 @@ header .signUpBtn {
   margin-bottom: 1rem;
   font-size: 1.8rem;
 }
-.container {
+.aboutContainer {
   max-width: 1200px;
   width: 100%;
   height: 5010px;
@@ -455,11 +456,11 @@ header .signUpBtn {
   border: 2px solid red;
 }
 @media (max-width:500px) {
-  .container {
+  .aboutContainer {
     width: 90%;
   }
 }
-.container header {
+.aboutContainer header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -468,10 +469,10 @@ header .signUpBtn {
   z-index: 2;
   height: 8rem;
 }
-.container header h1 {
+.aboutContainer header h1 {
   font-size: 5rem;
 }
-.container .menu {
+.aboutContainer .menu {
   height: 400px;
   width: 25%;
   background-color: #9DB5B2;
@@ -482,23 +483,23 @@ header .signUpBtn {
   z-index: 1;
   display: none;
 }
-.container .menu .menu-items {
+.aboutContainer .menu .menu-items {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   margin: 2rem auto;
 }
-.container .menu .menu-items a {
+.aboutContainer .menu .menu-items a {
   font-size: 2.25rem;
   color: #3B413C;
   text-decoration: none;
   margin: 3.5rem;
 }
-.container .menu .menu-items a:hover {
+.aboutContainer .menu .menu-items a:hover {
   color: #94D1BE;
 }
-.container .menu--open {
+.aboutContainer .menu--open {
   display: block;
   height: 400px;
   width: 18%;
@@ -508,12 +509,12 @@ header .signUpBtn {
   justify-content: right;
   border: 2px solid white;
 }
-.container .menu-button {
+.aboutContainer .menu-button {
   height: 2rem;
   cursor: pointer;
 }
 @media (max-width:500px) {
-  .container .about {
+  .aboutContainer .about {
     width: 90%;
     display: flex;
     flex-flow: row wrap;
@@ -521,7 +522,7 @@ header .signUpBtn {
     margin-left: auto;
   }
 }
-.container .about h1 {
+.aboutContainer .about h1 {
   font-size: 4rem;
   color: #3B413C;
   display: flex;
@@ -532,11 +533,11 @@ header .signUpBtn {
   margin-bottom: 2rem;
 }
 @media (max-width:500px) {
-  .container .about h1 {
+  .aboutContainer .about h1 {
     justify-content: center;
   }
 }
-.container .about p {
+.aboutContainer .about p {
   font-size: 3rem;
   color: #3B413C;
   display: flex;
@@ -545,7 +546,7 @@ header .signUpBtn {
   justify-content: center;
   margin-bottom: 5rem;
 }
-.container .about .box {
+.aboutContainer .about .box {
   display: flex;
   flex-flow: row wrap;
   width: 90%;
@@ -557,7 +558,7 @@ header .signUpBtn {
   padding-bottom: 2rem;
   background-color: #94D1BE;
 }
-.container .about .box img {
+.aboutContainer .about .box img {
   padding-top: 2rem;
   padding-bottom: 2rem;
   justify-content: center;
@@ -567,13 +568,13 @@ header .signUpBtn {
   border: 2px solid #9DB5B2;
 }
 @media (max-width:500px) {
-  .container .about .box img {
+  .aboutContainer .about .box img {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
   }
 }
-.container .about .box h2 {
+.aboutContainer .about .box h2 {
   width: 47%;
   font-size: 2rem;
   margin-top: 2.5rem;
@@ -583,7 +584,7 @@ header .signUpBtn {
   box-shadow: 5px 7px 5px 8px #3B413C;
 }
 @media (max-width:500px) {
-  .container .about .box h2 {
+  .aboutContainer .about .box h2 {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
@@ -686,41 +687,53 @@ header h1 {
 }
 .carousel {
   width: 100%;
-  height: 770px;
-  margin-top: 2rem;
-  margin-right: auto;
-  margin-bottom: 2rem;
-  margin-left: auto;
-  padding-top: 6rem;
-  background-color: #3B413C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
 }
-@media (max-width:500px) {
+@media (min-width: 1200px) {
   .carousel {
-    justify-content: center;
-    margin-top: 2rem;
-    width: 100%;
-    height: 290px;
+    width: 1200px;
   }
 }
-.carousel img {
-  display: none;
-  width: 80%;
-  height: 45rem;
-  margin-right: auto;
-  margin-left: auto;
+.carousel .left-button,
+.carousel .right-button {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  padding-top: 0.5rem;
+  color: #94D1BE;
+  background-color: #3B413C;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
-@media (max-width:500px) {
-  .carousel img {
-    width: 100%;
-    height: 200px;
-  }
+.carousel .left-button:hover,
+.carousel .right-button:hover {
+  color: #94D1BE;
+  background-color: #3B413C;
+  border: 2px solid #DAF0EE;
 }
 .carousel .left-button {
-  font-size: 8rem;
-  color: #DAF0EE;
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
 }
 .carousel .right-button {
-  font-size: 8rem;
-  color: #DAF0EE;
-  text-align: right;
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+}
+.carousel img {
+  width: 100%;
+  display: none;
 }

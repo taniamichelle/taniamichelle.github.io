@@ -14,3 +14,16 @@
     padding-left: @leftPadding;
     padding-right: @leftPadding;
 }
+
+//flex
+.flex(@jc: none, @ai: none, @dir: row) {
+  display: flex;
+  justify-content: @jc;
+  align-items: @ai;
+  flex-direction: @dir;
+}
+
+//width
+.width-100 {
+  width: 100%;
+}
