@@ -5,8 +5,9 @@
   position: relative;
   overflow: hidden;
   margin-top: 16px;
-  @media(min-width: 1200px){
-    width: 1200px;
+  @media(max-width: 500px){
+    width: 90%;
+    margin: 0 auto;
   }
   .left-button, .right-button {
     .flex(center);
@@ -38,5 +39,9 @@
   img {
     .width-100();
     display: none;
+    
+    @media @mobile {
+        height: 300px;
+    }
   }
 }
