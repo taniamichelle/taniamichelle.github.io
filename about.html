@@ -6,7 +6,9 @@
     <title>Home</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-
+    <link
+        href="https://fonts.googleapis.com/css?family=Cookie|Cormorant+SC|Erica+One|Gidugu|Limelight|Mate+SC|Modak|Roboto+Slab|Romanesco|Vast+Shadow&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -14,9 +16,11 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="aboutContainer">
         <header>
             <h1>FoodieFun</h1>
+            <div class="loginBtn">Log In</div>
+            <div class="signUpBtn">Sign Up!</div>
             <img class="menu-button" src="./img/nav-hamburger.png" alt="Menu Button">
             <div class="menu">
                 <div class="menu-items">
@@ -25,25 +29,41 @@
                     <a href="about.html">About Us</a>
                     <a href="contact.html">Contact Us</a>
                 </div>
-                <img class="menu-button-close" src="./img/nav-hamburger-close.png" alt="Menu Dropdown">
             </div>
         </header>
         <div class="about">
             <div class="top-content">
                 <h1>About Us</h1>
-                <img src="" alt="Photo of David" />
+                <div class="box 1">
+                    <img src="img/david.png" alt="Photo of David" />
+                    <h2>Here is info on David!</h2>
+                </div>
                 <p>Team Leader: David Situ</p>
-                <img src="" alt="Photo of Tania" />
+                <div class="box 2">
+                    <img src="img/headshot_crop.jpg" alt="Photo of Tania" />
+                    <h2>Here is info on Tania!</h2>
+                </div>
                 <p>Web UI Developer I: Tania Keller</p>
-                <img src="" alt="Photo of Jonathon" />
+                <div class="box 3">
+                    <img src="img/eric.png" alt="Photo of Jonathon" />
+                    <h2>Here is info on Jonathon (Eric)!</h2>
+                </div>
                 <p>Web UI Developer II: Jonathon Green</p>
-                <img src="" alt="Photo of Blake" />
+                <div class="box 4">
+                    <img src="img/blake.png" alt="Photo of Blake" />
+                    <h2>Here is info on Blake!</h2>
+                </div>
                 <p>Front End Architect: Blake Goms</p>
-                <img src="" alt="Photo of Nguyen" />
+                <div class="box 5">
+                    <img src="img/nguyen.png" alt="Photo of Nguyen" />
+                    <h2>Here is info on Nguyen!</h2>
+                </div>
                 <p>Backend Architect: Nguyen Vo</p>
             </div>
         </div>
         <script src="js/index.js"></script>
+        <script src="js/about.js"></script>
+        <script src="js/navigation.js"></script>
 </body>
 
 </html>

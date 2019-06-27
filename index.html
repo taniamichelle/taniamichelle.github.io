@@ -6,7 +6,9 @@
     <title>Home</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-
+    <link
+        href="https://fonts.googleapis.com/css?family=Cookie|Cormorant+SC|Erica+One|Gidugu|Limelight|Mate+SC|Modak|Roboto+Slab|Romanesco|Vast+Shadow&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,6 +21,8 @@
     <div class="container">
         <header>
             <h1>FoodieFun</h1>
+            <div class="loginBtn">Log In</div>
+            <div class="signUpBtn">Sign Up!</div>
             <img class="menu-button" src="./img/nav-hamburger.png" alt="Menu Button">
             <div class="menu">
                 <div class="menu-items">
@@ -26,8 +30,8 @@
                     <a href="home.html">Home</a>
                     <a href="about.html">About Us</a>
                     <a href="contact.html">Contact Us</a>
+                    <a href="#">My Reviews</a>
                 </div>
-                <img class="menu-button-close" src="./img/nav-hamburger-close.png" alt="Menu Dropdown">
             </div>
         </header>
         <div class="pitch">
@@ -50,25 +54,67 @@
                 </ul>
             </div>
         </div>
+        <div class="exampleReviews">
+            <div class="reviewer1">
+                <img class="re1" src="" alt="reviewer 1">
+                <p>review goes here</p>
+            </div>
+            <div class="reviewer2">
+                <img class="re2" src="" alt="reviewer 2">
+                <p>review goes here</p>
+            </div>
+            <div class="reviewer3">
+                <img class="re3" src="" alt="reviewer 3">
+                <p>review goes here</p>
+            </div>
+        </div>
         <!-- CAROUSEL -->
         <div class="carousel">
             <div class="left-button">
-                < </div> <img src="carousel/americanMix.jpg" />
-                <img src="carousel/croissant.jpg" />
-                <img src="carousel/cheers.jpg" />
-                <img src="carousel/burger.jpg" />
-                <img src="carousel/indian.jpg" />
-                <img src="carousel/sushi.jpg" />
-                <img src="carousel/hoagie.jpg" />
-                <img src="carousel/macaroons.jpg" />
-                <img src="carousel/beer.jpg" />
-                <div class="right-button"> > </div>
+                < </div> <img src="carousel/americanMix.jpg">
+                    <img src="carousel/croissant.jpg">
+                    <img src="carousel/cheers.jpg">
+                    <img src="carousel/burger.jpg">
+                    <img src="carousel/indian.jpg">
+                    <img src="carousel/sushi.jpg">
+                    <img src="carousel/hoagie.jpg">
+                    <img src="carousel/macaroons.jpg">
+                    <img src="carousel/beer.jpg">
+                    <div class="right-button"> > </div>
             </div>
             <!-- End CAROUSEL -->
-            <div class="top-content-container">
-                <div class="find">
-                    <h1>Find</h1>
-                    <!-- <ul>
+
+            <div class="myReviews">
+                <h2>My Reviews</h2>
+            </div>
+
+            <section class="bottom-content-container">
+                <div class="text">
+                    <h3>FoodieFun Cities</h3>
+                    <div class="btn">Chicago</div>
+                    <div class="btn">Los Angeles</div>
+                    <div class="btn">New York</div>
+                    <div class="btn">Philadelphia</div>
+                    <div class="btn">San Francisco</div>
+                </div>
+            </section>
+
+            <section class="footer-container">
+                <footer>CopyrightⒸ 2019 FoodieFun </footer>
+            </section>
+        </div>
+
+        <script src="js/index.js"></script>
+        <script src="js/carousel.js"></script>
+        <script src="js/navigation.js"></script>
+</body>
+
+</html>
+
+<!-- <div class="top-content-container"> -->
+<!-- <div class="find">
+                    <h1>Find</h1> -->
+<!-- <ul>
         <li>Restaurant Name</li>
         <li>Food Type</li>
         <li>American</li>
@@ -104,33 +150,8 @@
         <li>Price</li>
         <li>Rating</li>
     </ul> -->
-                </div>
+<!-- </div>
                 <div class="near">
                     <h1>Near</h1>
                 </div>
-            </div>
-            <div class="reviews">
-                <h2>My Recent Reviews</h2>
-            </div>
-
-            <section class="bottom-content-container">
-                <div class="text">
-                    <h3>FoodieFun Cities</h3>
-                    <div class="btn">Chicago</div>
-                    <div class="btn">Los Angeles</div>
-                    <div class="btn">New York</div>
-                    <div class="btn">Philadelphia</div>
-                    <div class="btn">San Francisco</div>
-                </div>
-            </section>
-
-            <section class="footer-container">
-                <footer>CopyrightⒸ 2019 FoodieFun </footer>
-            </section>
-        </div>
-
-        <script src="js/index.js"></script>
-        <script src="js/carousel.js"></script>
-</body>
-
-</html>
+            </div> -->
