@@ -154,17 +154,30 @@ html {
 }
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 1.5rem 7rem;
   color: #DAF0EE;
   z-index: 2;
   height: 20rem;
 }
+@media (max-width:500px) {
+  header {
+    height: 300px;
+    border: 2px solid red;
+  }
+}
 header h1 {
   font-size: 6rem;
   font-family: 'Vast Shadow', cursive;
   color: #FFFFFF;
+}
+@media (max-width:500px) {
+  header h1 {
+    font-size: 2rem;
+    text-align: left;
+    border: 2px solid blue;
+  }
 }
 header .loginBtn {
   font-size: 1.8rem;
@@ -180,8 +193,6 @@ header .loginBtn {
     text-align: center;
     padding: 0.6rem 0.6rem 0.6rem 0.6rem;
     border-radius: 6px;
-    margin-left: 1rem;
-    margin-right: 1rem;
   }
 }
 header .signUpBtn {
@@ -387,6 +398,8 @@ header .signUpBtn {
   justify-content: space-evenly;
   font-size: 2.8rem;
   font-family: 'Mate SC', serif;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
 }
 .container .exampleReviews p {
   font-size: 3rem;
@@ -475,7 +488,7 @@ header .signUpBtn {
 @media (max-width:500px) {
   .aboutContainer {
     width: 90%;
-    height: 2740px;
+    height: 3400px;
   }
 }
 .aboutContainer header {
@@ -553,9 +566,9 @@ header .signUpBtn {
 }
 @media (max-width:500px) {
   .aboutContainer .about h1 {
-    justify-content: flex-start;
     margin-top: 1rem;
     padding-top: 1.8rem;
+    font-size: 6rem;
   }
 }
 .aboutContainer .about p {
@@ -570,14 +583,14 @@ header .signUpBtn {
 }
 @media (max-width:500px) {
   .aboutContainer .about p {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 }
 .aboutContainer .about .box {
   display: flex;
   flex-flow: row wrap;
   width: 90%;
-  height: 400px;
+  height: 390px;
   justify-content: space-between;
   margin-top: 3rem;
   margin-right: auto;
@@ -588,30 +601,36 @@ header .signUpBtn {
 @media (max-width:500px) {
   .aboutContainer .about .box {
     width: 100%;
+    height: 500px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 .aboutContainer .about .box img {
   justify-content: center;
-  width: 40%;
-  height: 380px;
+  width: 37%;
+  height: 350px;
   color: #DAF0EE;
-  margin: 2.5rem 2rem 2.5rem 2rem;
+  margin: 4rem 2rem 2.5rem 5rem;
   border: 2px solid #9DB5B2;
 }
 @media (max-width:500px) {
   .aboutContainer .about .box img {
-    width: 76%;
-    height: 270px;
+    width: 70%;
+    height: 200px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 }
 .aboutContainer .about .box h2 {
-  width: 47%;
+  width: 45%;
+  height: 330px;
   font-size: 3rem;
   font-family: 'Mate SC', serif;
-  margin-top: 2.5rem;
-  margin-right: 3rem;
+  margin-top: 3rem;
+  margin-right: 6rem;
   margin-bottom: 2rem;
   padding-top: 3rem;
   text-align: center;
@@ -622,7 +641,10 @@ header .signUpBtn {
 @media (max-width:500px) {
   .aboutContainer .about .box h2 {
     width: 90%;
+    height: 200px;
+    margin-top: 1rem;
     margin-right: auto;
+    margin-bottom: 1rem;
     margin-left: auto;
     font-size: 2rem;
   }
