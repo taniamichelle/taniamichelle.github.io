@@ -2,7 +2,6 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1.5rem 7rem;
     color: @azureishWhite;
     z-index: 2;
     height: 20rem; 
@@ -15,9 +14,10 @@ header {
         font-family: 'Vast Shadow', cursive;
         color: @white;
         @media @mobile {
-            font-size: 2rem;
-            text-align: left;
+            font-size: 3rem;
+            margin-right: 2rem;
             border: 2px solid blue;
+            font-family: 'Cormorant SC', cursive;
         }
     }
     .loginBtn{
@@ -30,10 +30,7 @@ header {
         @media @mobile {
             font-size: 1.4rem;
             text-align: center;
-            padding: 0.6rem 0.6rem 0.6rem 0.6rem;
             border-radius: 6px;
-            // margin-left: 1rem;
-            // margin-right: 1rem;
         }
     }
     .signUpBtn{
@@ -46,7 +43,6 @@ header {
         @media @mobile {
             font-size: 1.4rem;
             text-align: center;
-            padding: 0.6rem 0.6rem 0.6rem 0.6rem;
             border-radius: 6px;
             margin-left: 1rem;
             margin-right: 1rem;
@@ -63,6 +59,9 @@ header {
     position: absolute;
     z-index: 1;
     display: none;
+    @media @mobile {
+        margin-right: 2rem;
+    }
     
     .menu-items {
         display: flex;
