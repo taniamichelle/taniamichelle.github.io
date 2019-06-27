@@ -6,7 +6,10 @@
     position: relative;
     background-color: @cambridgeBlue;
     //border: 2px solid pink;
-
+    // @media @tablet {
+    //     width: 20%;
+    //     border: 2px solid green;
+    // }
     @media @mobile{
         width: 90%;
     }
@@ -22,6 +25,7 @@
         background-color: @cambridgeBlue;
         @media @mobile {
             height: 1300px;
+            margin-top: 7rem;
             margin-right: auto;
             margin-left: auto;
         }
@@ -48,7 +52,7 @@
                 padding-top: 1rem;
                 padding-bottom: 1rem;
                 @media @mobile {
-                    width: 70%;
+                    width: 60%;
                     margin-right: auto;
                     margin-left: auto;
                 }
@@ -154,17 +158,18 @@
         font-size: 2rem;
         background-color: @cambridgeBlue;
         padding-bottom: 2rem;
-        padding-top: 2rem;
+        padding-top: 3rem;
         .purpose {
             display: flex;
             flex-flow: row wrap;
-            width: 41%;
+            width: 40%;
             height: 17rem;
             padding-top: 0.75rem;
             padding-right: 2rem;
             padding-bottom: 0.5rem;
             padding-left: 2rem;
             text-align: center;
+            margin-left: 5.5rem;
             //border: 2px solid red;
             @media @mobile {
                 justify-content: center;
@@ -172,7 +177,8 @@
             h2 {
                 width: 100%;
                 color: @blackOlive;
-                margin-bottom: 0.5rem;
+                margin-bottom: 2.5rem;
+                margin-left: 10rem;
                 height: 3rem;
                 padding-left: 2.5rem;
                 //border: 2px solid yellow;
@@ -194,13 +200,12 @@
             flex-flow: row wrap;
             color: @azureishWhite;
             align-items: center;
-            width: 51%;
+            width: 45%;
             height: 18rem;
             text-align: center;
             margin-bottom: 1.5rem;
             padding-top: 0.7rem;
             padding-bottom: 1rem;
-            padding-left: 1rem;
             //border: 2px solid red;
             @media @mobile {
                 //border: 2px solid red;
@@ -219,6 +224,7 @@
             font-size: 4.5rem;
             font-family: 'Gidugu', sans-serif;
             margin-bottom: 0.75rem;
+            margin-right: 10rem;
             @media @mobile {
                 text-align: left;
                 margin-left: 0px;
@@ -227,10 +233,9 @@
             }
         }
         ul {
-            width: 75%;
+            width: 80%;
             color: @azureishWhite;
             list-style-type: circle; 
-            margin-left: 8.7rem;
             //border: 2px solid green;
             @media @mobile {
                 justify-content: left;
@@ -239,8 +244,7 @@
         }
         li {
             margin-bottom: 0.75rem;
-            margin-left: 2rem;
-            padding-left: 4rem;
+            margin-left: 4rem;
             text-align: left;
             //border: 2px solid pink;
             font-size: 1.8rem;

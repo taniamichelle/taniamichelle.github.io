@@ -154,15 +154,20 @@ html {
 }
 header {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
   color: #DAF0EE;
-  z-index: 2;
-  height: 20rem;
+  height: 15rem;
+  background-color: #3B413C;
 }
 @media (max-width:500px) {
   header {
-    height: 300px;
+    height: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    border: 2px solid red;
+    align-items: space-evenly;
   }
 }
 header h1 {
@@ -172,92 +177,110 @@ header h1 {
 }
 @media (max-width:500px) {
   header h1 {
-    font-size: 3rem;
-    margin-right: 2rem;
-    font-family: 'Cormorant SC', cursive;
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    border: 2px solid blue;
   }
 }
 header .loginBtn {
-  background-color: #94D1BE;
-  padding: 0.6rem 0.6rem 0.6rem 0.6rem;
-  border-radius: 10px;
-  border: 1px solid #DAF0EE;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #9DB5B2;
+  border-radius: 12px;
   color: #3B413C;
 }
 @media (max-width:500px) {
   header .loginBtn {
-    font-size: 1.4rem;
     text-align: center;
-    border-radius: 6px;
-    margin-right: 2rem;
+    border: 2px solid yellow;
+    width: 40%;
   }
 }
 header .loginBtn button {
-  background-color: #9DB5B2;
-  font-size: 2rem;
-  font-family: 'Cormorant SC', cursive;
+  background-color: #94D1BE;
+  font-size: 3rem;
+  font-family: 'Gidugu', sans-serif;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-radius: 12px;
+  border: 1px solid #DAF0EE;
+}
+@media (max-width:500px) {
+  header .loginBtn button {
+    width: 40%;
+    border: 2px solid green;
+  }
 }
 .menu {
-  height: 400px;
+  height: 600px;
   width: 25%;
-  background-color: #3B413C;
-  align-items: right;
   opacity: 0.98;
-  margin: 0 auto;
   position: absolute;
   z-index: 1;
   display: none;
+  border: 2px solid yellow;
+  align-items: center;
+  color: crimson;
 }
-@media (max-width:500px) {
-  .menu {
-    margin-right: 2rem;
-  }
-}
-.menu .menu-items {
+.menu-items {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4rem;
+  text-align: center;
+  align-items: right;
+  padding-top: 7rem;
+  height: 500px;
+  color: tan;
 }
-.menu .menu-items a {
-  font-size: 2.25rem;
-  color: #DAF0EE;
+.menu-items a {
+  font-size: 2rem;
+  color: #3B413C;
   text-decoration: none;
-  margin: 3.5rem;
 }
-.menu .menu-items a:hover {
-  color: #94D1BE;
+.menu-items a:hover {
+  color: coral;
 }
 @media (max-width:500px) {
-  .menu .menu-items a {
+  .menu-items a {
     width: 100%;
-    height: 600px;
+    height: 100px;
     font-size: 2rem;
     color: #DAF0EE;
     text-align: center;
     background-color: #3B413C;
   }
 }
+.menu-button-close {
+  cursor: pointer;
+  margin-top: 0px;
+  margin-bottom: 2rem;
+  padding-top: 0px;
+}
+.menu-button {
+  height: 3rem;
+  cursor: pointer;
+  align-content: center;
+}
+@media (max-width:500px) {
+  .menu-button {
+    background-color: #3B413C;
+  }
+}
 .menu--open {
   display: block;
-  height: 400px;
-  width: 18%;
-  margin-top: 2rem;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+  height: 600px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   justify-content: right;
   border: 2px solid white;
+  background-color: #94D1BE;
+  color: #3B413C;
 }
 @media (max-width:500px) {
   .menu--open {
     height: 200px;
     width: 100%;
   }
-}
-.menu-button {
-  height: 2rem;
-  cursor: pointer;
 }
 .container {
   max-width: 1200px;
@@ -286,6 +309,7 @@ header .loginBtn button {
 @media (max-width:500px) {
   .container .exampleReviews {
     height: 1300px;
+    margin-top: 7rem;
     margin-right: auto;
     margin-left: auto;
   }
@@ -317,7 +341,7 @@ header .loginBtn button {
 }
 @media (max-width:500px) {
   .container .review1 img {
-    width: 70%;
+    width: 60%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -433,18 +457,19 @@ header .loginBtn button {
   font-size: 2rem;
   background-color: #9DB5B2;
   padding-bottom: 2rem;
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 .pitch .purpose {
   display: flex;
   flex-flow: row wrap;
-  width: 41%;
+  width: 40%;
   height: 17rem;
   padding-top: 0.75rem;
   padding-right: 2rem;
   padding-bottom: 0.5rem;
   padding-left: 2rem;
   text-align: center;
+  margin-left: 5.5rem;
 }
 @media (max-width:500px) {
   .pitch .purpose {
@@ -454,7 +479,8 @@ header .loginBtn button {
 .pitch .purpose h2 {
   width: 100%;
   color: #3B413C;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: 10rem;
   height: 3rem;
   padding-left: 2.5rem;
   font-size: 4.5rem;
@@ -476,13 +502,12 @@ header .loginBtn button {
   flex-flow: row wrap;
   color: #DAF0EE;
   align-items: center;
-  width: 51%;
+  width: 45%;
   height: 18rem;
   text-align: center;
   margin-bottom: 1.5rem;
   padding-top: 0.7rem;
   padding-bottom: 1rem;
-  padding-left: 1rem;
 }
 @media (max-width:500px) {
   .pitch .features {
@@ -500,6 +525,7 @@ header .loginBtn button {
   font-size: 4.5rem;
   font-family: 'Gidugu', sans-serif;
   margin-bottom: 0.75rem;
+  margin-right: 10rem;
 }
 @media (max-width:500px) {
   .pitch h2 {
@@ -510,10 +536,9 @@ header .loginBtn button {
   }
 }
 .pitch ul {
-  width: 75%;
+  width: 80%;
   color: #DAF0EE;
   list-style-type: circle;
-  margin-left: 8.7rem;
 }
 @media (max-width:500px) {
   .pitch ul {
@@ -523,8 +548,7 @@ header .loginBtn button {
 }
 .pitch li {
   margin-bottom: 0.75rem;
-  margin-left: 2rem;
-  padding-left: 4rem;
+  margin-left: 4rem;
   text-align: left;
   font-size: 1.8rem;
 }
@@ -643,59 +667,6 @@ header .loginBtn button {
     width: 90%;
     height: 3400px;
   }
-}
-.aboutContainer header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 7rem;
-  color: #DAF0EE;
-  z-index: 2;
-  height: 8rem;
-}
-.aboutContainer header h1 {
-  font-size: 5rem;
-}
-.aboutContainer .menu {
-  height: 400px;
-  width: 25%;
-  background-color: #9DB5B2;
-  align-items: right;
-  opacity: 0.98;
-  margin: 0 auto;
-  position: absolute;
-  z-index: 1;
-  display: none;
-}
-.aboutContainer .menu .menu-items {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem auto;
-}
-.aboutContainer .menu .menu-items a {
-  font-size: 2.25rem;
-  color: #3B413C;
-  text-decoration: none;
-  margin: 3.5rem;
-}
-.aboutContainer .menu .menu-items a:hover {
-  color: #94D1BE;
-}
-.aboutContainer .menu--open {
-  display: block;
-  height: 400px;
-  width: 18%;
-  margin-top: 2rem;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  justify-content: right;
-  border: 2px solid white;
-}
-.aboutContainer .menu-button {
-  height: 2rem;
-  cursor: pointer;
 }
 @media (max-width:500px) {
   .aboutContainer .about {
@@ -816,60 +787,6 @@ header .loginBtn button {
   .container {
     width: 90%;
   }
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 7rem;
-  background-color: #3B413C;
-  color: #DAF0EE;
-  z-index: 2;
-  height: 8rem;
-}
-header h1 {
-  font-size: 5rem;
-}
-.menu {
-  height: 400px;
-  width: 25%;
-  background-color: #94D1BE;
-  align-items: right;
-  opacity: 0.98;
-  margin: 0 auto;
-  position: absolute;
-  z-index: 1;
-  display: none;
-}
-.menu .menu-items {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem auto;
-}
-.menu .menu-items a {
-  font-size: 2.25rem;
-  color: #3B413C;
-  text-decoration: none;
-  margin: 3.5rem;
-}
-.menu .menu-items a:hover {
-  color: #9DB5B2;
-}
-.menu--open {
-  display: block;
-  height: 400px;
-  width: 18%;
-  margin-top: 2rem;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  justify-content: right;
-  border: 2px solid white;
-}
-.menu-button {
-  height: 2rem;
-  cursor: pointer;
 }
 .contact {
   color: #DAF0EE;
