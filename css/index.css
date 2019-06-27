@@ -247,6 +247,10 @@ header .signUpBtn {
   .menu .menu-items a {
     width: 100%;
     height: 600px;
+    font-size: 2rem;
+    color: #DAF0EE;
+    text-align: center;
+    background-color: #3B413C;
   }
 }
 .menu--open {
@@ -258,6 +262,12 @@ header .signUpBtn {
   padding-right: 0.25rem;
   justify-content: right;
   border: 2px solid white;
+}
+@media (max-width:500px) {
+  .menu--open {
+    height: 200px;
+    width: 100%;
+  }
 }
 .menu-button {
   height: 2rem;
@@ -276,6 +286,79 @@ header .signUpBtn {
     width: 90%;
   }
 }
+.container .exampleReviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 680px;
+  font-size: 2.8rem;
+  font-family: 'Mate SC', serif;
+  margin-top: 3rem;
+  background-color: #9DB5B2;
+}
+.container .exampleReviews .review1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  width: 80%;
+  margin-bottom: 2rem;
+  border: 2px solid #DAF0EE;
+}
+.container .exampleReviews .review1 img {
+  width: 18%;
+  height: 200px;
+  margin-right: 8rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.container .exampleReviews .review1 p {
+  font-size: 3rem;
+  font-family: 'Romanesco', cursive;
+  width: 45%;
+}
+.container .exampleReviews .review2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  width: 80%;
+  margin-bottom: 2rem;
+  border: 2px solid #DAF0EE;
+}
+.container .exampleReviews .review2 p {
+  font-size: 3rem;
+  font-family: 'Romanesco', cursive;
+  width: 45%;
+}
+.container .exampleReviews .review2 img {
+  width: 18%;
+  height: 200px;
+  margin-left: 8rem;
+}
+.container .exampleReviews .review3 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  width: 80%;
+  margin-bottom: 2rem;
+  border: 2px solid #DAF0EE;
+}
+.container .exampleReviews .review3 img {
+  width: 18%;
+  height: 180px;
+  margin-right: 8rem;
+}
+.container .exampleReviews .review3 p {
+  font-size: 3rem;
+  font-family: 'Romanesco', cursive;
+  width: 45%;
+}
 .container .pitch {
   display: flex;
   flex-flow: row wrap;
@@ -283,7 +366,8 @@ header .signUpBtn {
   height: 20rem;
   justify-content: space-between;
   font-size: 2rem;
-  margin-top: 2.5rem;
+  background-color: #9DB5B2;
+  padding-bottom: 2rem;
 }
 .container .pitch .purpose {
   display: flex;
@@ -395,70 +479,6 @@ header .signUpBtn {
     height: 550px;
   }
 }
-.container .exampleReviews {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 800px;
-  font-size: 2.8rem;
-  font-family: 'Mate SC', serif;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-.container .exampleReviews .review1 {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  margin-bottom: 2rem;
-}
-.container .exampleReviews .review1 img {
-  width: 18%;
-  height: 200px;
-  margin-right: 8rem;
-}
-.container .exampleReviews .review1 p {
-  font-size: 3rem;
-  font-family: 'Romanesco', cursive;
-  width: 45%;
-}
-.container .exampleReviews .review2 {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  margin-bottom: 2rem;
-}
-.container .exampleReviews .review2 p {
-  font-size: 3rem;
-  font-family: 'Romanesco', cursive;
-  width: 45%;
-}
-.container .exampleReviews .review2 img {
-  width: 18%;
-  height: 200px;
-  margin-left: 8rem;
-}
-.container .exampleReviews .review3 {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-}
-.container .exampleReviews .review3 img {
-  width: 18%;
-  height: 200px;
-  margin-right: 8rem;
-}
-.container .exampleReviews .review3 p {
-  font-size: 3rem;
-  font-family: 'Romanesco', cursive;
-  width: 45%;
-}
 .container .myReviews {
   font-size: 5rem;
   font-family: 'Mate SC', serif;
@@ -469,6 +489,7 @@ header .signUpBtn {
   justify-content: center;
   background-color: #94D1BE;
   height: 350px;
+  margin-top: 2rem;
 }
 .container .myReviews h2 {
   margin-top: 2rem;
@@ -651,6 +672,7 @@ header .signUpBtn {
   margin-left: auto;
   padding-bottom: 2.6rem;
   background-color: #94D1BE;
+  border: 2px solid #DAF0EE;
 }
 @media (max-width:500px) {
   .aboutContainer .about .box {
@@ -850,9 +872,4 @@ header h1 {
 .carousel img {
   width: 100%;
   display: none;
-}
-@media (max-width:500px) {
-  .carousel img {
-    height: 300px;
-  }
 }
