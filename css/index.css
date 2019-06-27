@@ -192,23 +192,7 @@ header .loginBtn {
     font-size: 1.4rem;
     text-align: center;
     border-radius: 6px;
-  }
-}
-header .signUpBtn {
-  font-size: 1.8rem;
-  font-family: 'Cormorant SC', cursive;
-  background-color: #94D1BE;
-  padding: 0.8rem 0.8rem 0.8rem 0.8rem;
-  border-radius: 12px;
-  color: #3B413C;
-}
-@media (max-width:500px) {
-  header .signUpBtn {
-    font-size: 1.4rem;
-    text-align: center;
-    border-radius: 6px;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
 }
 .menu {
@@ -297,7 +281,14 @@ header .signUpBtn {
   margin-top: 3rem;
   background-color: #9DB5B2;
 }
-.container .exampleReviews .review1 {
+@media (max-width:500px) {
+  .container .exampleReviews {
+    height: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.container .review1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -307,19 +298,41 @@ header .signUpBtn {
   margin-bottom: 2rem;
   border: 2px solid #DAF0EE;
 }
-.container .exampleReviews .review1 img {
+@media (max-width:500px) {
+  .container .review1 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 430px;
+  }
+}
+.container .review1 img {
   width: 18%;
   height: 200px;
   margin-right: 8rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.container .exampleReviews .review1 p {
+@media (max-width:500px) {
+  .container .review1 img {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.container .review1 p {
   font-size: 3rem;
   font-family: 'Romanesco', cursive;
   width: 45%;
 }
-.container .exampleReviews .review2 {
+@media (max-width:500px) {
+  .container .review1 p {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.container .review2 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -329,17 +342,40 @@ header .signUpBtn {
   margin-bottom: 2rem;
   border: 2px solid #DAF0EE;
 }
-.container .exampleReviews .review2 p {
+@media (max-width:500px) {
+  .container .review2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 430px;
+  }
+}
+.container .review2 p {
   font-size: 3rem;
   font-family: 'Romanesco', cursive;
   width: 45%;
 }
-.container .exampleReviews .review2 img {
+@media (max-width:500px) {
+  .container .review2 p {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1rem;
+  }
+}
+.container .review2 img {
   width: 18%;
   height: 200px;
   margin-left: 8rem;
 }
-.container .exampleReviews .review3 {
+@media (max-width:500px) {
+  .container .review2 img {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.container .review3 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -349,17 +385,40 @@ header .signUpBtn {
   margin-bottom: 2rem;
   border: 2px solid #DAF0EE;
 }
-.container .exampleReviews .review3 img {
+@media (max-width:500px) {
+  .container .review3 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 430px;
+  }
+}
+.container .review3 img {
   width: 18%;
   height: 180px;
   margin-right: 8rem;
 }
-.container .exampleReviews .review3 p {
+@media (max-width:500px) {
+  .container .review3 img {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1rem;
+  }
+}
+.container .review3 p {
   font-size: 3rem;
   font-family: 'Romanesco', cursive;
   width: 45%;
 }
-.container .pitch {
+@media (max-width:500px) {
+  .container .review3 p {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.pitch {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
@@ -369,7 +428,7 @@ header .signUpBtn {
   background-color: #9DB5B2;
   padding-bottom: 2rem;
 }
-.container .pitch .purpose {
+.pitch .purpose {
   display: flex;
   flex-flow: row wrap;
   width: 41%;
@@ -381,11 +440,11 @@ header .signUpBtn {
   text-align: center;
 }
 @media (max-width:500px) {
-  .container .pitch .purpose {
+  .pitch .purpose {
     justify-content: center;
   }
 }
-.container .pitch .purpose h2 {
+.pitch .purpose h2 {
   width: 100%;
   color: #3B413C;
   margin-bottom: 0.5rem;
@@ -394,18 +453,18 @@ header .signUpBtn {
   font-size: 4.5rem;
   font-family: 'Gidugu', sans-serif;
 }
-.container .pitch p {
+.pitch p {
   color: #DAF0EE;
   padding-right: 1rem;
   padding-left: 4rem;
 }
 @media (max-width:500px) {
-  .container .pitch p {
+  .pitch p {
     padding-top: 2.5rem;
     margin-top: 1rem;
   }
 }
-.container .pitch .features {
+.pitch .features {
   display: flex;
   flex-flow: row wrap;
   color: #DAF0EE;
@@ -419,7 +478,7 @@ header .signUpBtn {
   padding-left: 1rem;
 }
 @media (max-width:500px) {
-  .container .pitch .features {
+  .pitch .features {
     justify-content: center;
     width: 40%;
     height: 290px;
@@ -427,7 +486,7 @@ header .signUpBtn {
     margin-left: auto 0;
   }
 }
-.container .pitch h2 {
+.pitch h2 {
   color: #3B413C;
   width: 100%;
   text-align: center;
@@ -436,26 +495,26 @@ header .signUpBtn {
   margin-bottom: 0.75rem;
 }
 @media (max-width:500px) {
-  .container .pitch h2 {
+  .pitch h2 {
     text-align: left;
     margin-left: 0px;
     margin-right: 3rem;
     width: 60%;
   }
 }
-.container .pitch ul {
+.pitch ul {
   width: 75%;
   color: #DAF0EE;
   list-style-type: circle;
   margin-left: 8.7rem;
 }
 @media (max-width:500px) {
-  .container .pitch ul {
+  .pitch ul {
     justify-content: left;
     margin-left: 0px;
   }
 }
-.container .pitch li {
+.pitch li {
   margin-bottom: 0.75rem;
   margin-left: 2rem;
   padding-left: 4rem;
@@ -463,7 +522,7 @@ header .signUpBtn {
   font-size: 1.8rem;
 }
 @media (max-width:500px) {
-  .container .pitch li {
+  .pitch li {
     width: 100%;
     font-size: 1.7rem;
     margin-top: 2rem;
@@ -474,12 +533,12 @@ header .signUpBtn {
   }
 }
 @media (max-width:500px) {
-  .container .pitch {
+  .pitch {
     width: 100%;
     height: 550px;
   }
 }
-.container .myReviews {
+.myReviews {
   font-size: 5rem;
   font-family: 'Mate SC', serif;
   padding-left: 2rem;
@@ -491,16 +550,21 @@ header .signUpBtn {
   height: 350px;
   margin-top: 2rem;
 }
-.container .myReviews h2 {
+@media (max-width:500px) {
+  .myReviews {
+    margin-top: 1rem;
+  }
+}
+.myReviews h2 {
   margin-top: 2rem;
   padding-top: 1.5rem;
 }
-.container .bottom-content-container {
+.bottom-content-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
-.container .bottom-content-container .text {
+.bottom-content-container .text {
   margin-top: 3rem;
   color: #94D1BE;
   display: flex;
@@ -510,7 +574,14 @@ header .signUpBtn {
   height: 400px;
   background-color: #3B413C;
 }
-.container .bottom-content-container .text h3 {
+@media (max-width:500px) {
+  .bottom-content-container .text {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 7rem;
+  }
+}
+.bottom-content-container .text h3 {
   font-size: 5rem;
   font-family: 'Mate SC', serif;
   margin-top: 2rem;
@@ -520,7 +591,7 @@ header .signUpBtn {
   width: 100%;
   background-color: #3B413C;
 }
-.container .bottom-content-container .btn {
+.bottom-content-container .btn {
   width: 9.5rem;
   height: 1.5rem;
   font-size: 1.5rem;
@@ -535,7 +606,7 @@ header .signUpBtn {
   border: 2px solid #94D1BE;
 }
 @media (max-width:500px) {
-  .container .bottom-content-container .btn {
+  .bottom-content-container .btn {
     width: 100%;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -543,7 +614,7 @@ header .signUpBtn {
     padding-right: 13.5rem;
   }
 }
-.container .footer-container {
+.footer-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -833,8 +904,11 @@ header h1 {
 }
 @media (max-width: 500px) {
   .carousel {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    background-color: #3B413C;
+    height: 350px;
+    margin-top: 1rem;
   }
 }
 .carousel .left-button,
