@@ -908,6 +908,8 @@ header .loginBtn button {
 @media (max-width:500px) {
   .container {
     width: 90%;
+    height: 680px;
+    margin-bottom: 2rem;
   }
 }
 .contact {
