@@ -1,2 +1,11 @@
-//add click event
-<a href="/team/UJHCPVCFL" target="/team/UJHCPVCFL" class="member_preview_link member_image thumb_512" data-member-id="UJHCPVCFL" data-thumb-size="512" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0) 34%, rgba(0,0,0,0.2) 66%, rgba(0,0,0,0.2) 83%, rgba(0,0,0,0.6)), url('https://ca.slack-edge.com/T4JUEB3ME-UJHCPVCFL-943786d05762-512'), url('https://ca.slack-edge.com/T4JUEB3ME-UJHCPVCFL-943786d05762-48')" aria-hidden="true"></a>
+//TweenMax: header should bounce to a larger size in 3sec
+TweenMax.to('.container header h1', 3, {
+    scale: 1.075, ease: Bounce.easeOut
+});
+
+//click: loginBtn
+const logInColor = document.querySelector('.loginBtn');
+
+logInColor.addEventListener('click', function (e) {
+    e.target.style.backgroundColor = 'azurishWhite';
+});
