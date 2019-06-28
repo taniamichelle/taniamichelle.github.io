@@ -354,7 +354,7 @@ header .loginBtn button {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  height: 230px;
+  height: 250px;
   width: 80%;
   margin-bottom: 2rem;
   border: 2px solid #DAF0EE;
@@ -409,7 +409,7 @@ header .loginBtn button {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 250px;
   width: 80%;
   margin-bottom: 2rem;
   border: 2px solid #DAF0EE;
@@ -466,7 +466,7 @@ header .loginBtn button {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  height: 230px;
+  height: 250px;
   width: 80%;
   margin-bottom: 2rem;
   border: 2px solid #DAF0EE;
