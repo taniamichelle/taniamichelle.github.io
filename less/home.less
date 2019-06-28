@@ -1,34 +1,38 @@
 .container {
-    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     font-family: Roboto, Arial, sans-serif;
     position: relative;
     background-color: @cambridgeBlue;
-    //border: 2px solid pink;
-    // @media @tablet {
-    //     width: 20%;
-    //     border: 2px solid green;
-    // }
-    @media @mobile{
+    @media @mobile {
         width: 90%;
     }
+   
     .exampleReviews {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        height: 680px;
+        height: 700px;
         font-size: 2.8rem;
         font-family: 'Mate SC', serif;
         margin-top: 3rem;
         background-color: @cambridgeBlue;
+        @media @tablet {
+            width: 100%;
+            height: 750px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 2rem;
+        }
         @media @mobile {
-            height: 1300px;
-            margin-top: 7rem;
+            width: 100%;
+            margin-top: 1rem;
             margin-right: auto;
             margin-left: auto;
-        }
+            display: flex;
+            flex-flow: column nowrap;
+            border: 2px solid yellow;
         }
         .review1 {
             display: flex;
@@ -39,11 +43,17 @@
             width: 80%;
             margin-bottom: 2rem;
             border: 2px solid @azureishWhite;
+            }
+            @media @tablet {
+                height:700px;
+            }
             @media @mobile {
                 display: flex;
                 flex-flow: column nowrap;
-                justify-content: center;
-                height: 430px;
+                height: 440px;
+                width: 100%;
+                border: 2px solid red;
+                align-items: center;
             }
             img {
                 width: 18%;
@@ -55,6 +65,7 @@
                     width: 60%;
                     margin-right: auto;
                     margin-left: auto;
+                    margin-bottom: 2rem;
                 }
             }
             p {
@@ -77,18 +88,23 @@
             width: 80%;
             margin-bottom: 2rem;
             border: 2px solid @azureishWhite;
+       
             @media @mobile {
                 display: flex;
-                flex-flow: column nowrap;
+                flex-direction: column-reverse;
+                flex-wrap: wrap;
                 justify-content: center;
                 height: 430px;
+                border: 2px solid yellow;
+                width: 100%;
             }
             p {
                 font-size: 3rem;
                 font-family: 'Romanesco', cursive;
                 width: 45%;
                 @media @mobile {
-                    width: 90%;
+                    width: 100%;
+                    margin-top: 2rem;
                     margin-right: auto;
                     margin-left: auto;
                     margin-bottom: 1rem;
@@ -116,11 +132,16 @@
             width: 80%;
             margin-bottom: 2rem;
             border: 2px solid @azureishWhite;
+            // @media @tablet {
+            //     width: 80%;
+            // }
             @media @mobile {
                 display: flex;
                 flex-flow: column nowrap;
                 justify-content: center;
                 height: 430px;
+                width: 100%;
+                border: 2px solid blue;
             }
             img {
                 width: 18%;
@@ -149,7 +170,6 @@
         
     }
     .pitch {
-        //border: 2px solid blue;
         display: flex;
         flex-flow: row wrap;
         width: 100%;
@@ -159,6 +179,18 @@
         background-color: @cambridgeBlue;
         padding-bottom: 2rem;
         padding-top: 3rem;
+        @media @tablet {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 390px;
+            justify-content: center;
+        }      
+        @media @mobile {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
         .purpose {
             display: flex;
             flex-flow: row wrap;
@@ -171,8 +203,16 @@
             text-align: center;
             margin-left: 5.5rem;
             //border: 2px solid red;
-            @media @mobile {
-                justify-content: center;
+            @media @tablet {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 1rem;
+            }    
+           @media @mobile {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
             }
             h2 {
                 width: 100%;
@@ -184,15 +224,31 @@
                 //border: 2px solid yellow;
                 font-size: 4.5rem;
                 font-family: 'Gidugu', sans-serif;
+                @media @tablet {
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-top: 0.5rem;
+                }
+                @media @mobile {
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
             }
         }
         p {
             color: @azureishWhite;
             padding-right: 1rem;
             padding-left: 4rem;
-            @media @mobile {
-                padding-top: 2.5rem;
-                margin-top: 1rem;
+            @media @tablet {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+           @media @mobile {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
             }
         }   
         .features {
@@ -207,13 +263,17 @@
             padding-top: 0.7rem;
             padding-bottom: 1rem;
             //border: 2px solid red;
-            @media @mobile {
-                //border: 2px solid red;
-                justify-content: center;
-                width: 40%;
-                height: 290px;
+            @media @tablet {
+                width: 100%;
+                text-align: center;
+                margin-left: auto;
                 margin-right: auto;
-                margin-left: auto 0;
+                padding-left: 2rem;
+            }    
+            @media @mobile {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
         h2 {
@@ -225,11 +285,15 @@
             font-family: 'Gidugu', sans-serif;
             margin-bottom: 0.75rem;
             margin-right: 10rem;
+            @media @tablet {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
             @media @mobile {
-                text-align: left;
-                margin-left: 0px;
-                margin-right: 3rem;
-                width: 60%;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
         ul {
@@ -237,9 +301,16 @@
             color: @azureishWhite;
             list-style-type: circle; 
             //border: 2px solid green;
+            @media @tablet {
+                width: 55%;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 2rem;
+            }
             @media @mobile {
-                justify-content: left;
-                margin-left: 0px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
         li {
@@ -256,17 +327,17 @@
             padding-top: 1.2rem;
             padding-left: 1rem;
             text-align: left;
+            @media @mobile {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
-        }
-        @media @mobile {
-            width: 100%;
-            height: 550px;
         }
     }
     .myReviews {
         font-size: 5rem;
         font-family: 'Mate SC', serif;
-        padding-left: 2rem;
         color: @azureishWhite;
         display: flex;
         flex-flow: row nowrap;
@@ -274,9 +345,9 @@
         background-color: @pearlAqua;
         height: 350px;
         margin-top: 2rem;
-        @media @mobile {
-            margin-top: 1rem;
-        }
+        @media @tablet {
+            width: 100%;
+        }    
         h2 {
             margin-top: 2rem;
             padding-top: 1.5rem;
@@ -296,6 +367,9 @@
             width: 100%;
             height: 400px;
             background-color: @blackOlive;
+            @media @tablet {
+                width: 100%;
+            }    
             @media @mobile {
                 margin-top: 1rem;
                 padding-top: 1rem;

@@ -6,12 +6,20 @@ header {
     color: @azureishWhite;
     height: 15rem;
     background-color: @blackOlive;
+    @media @tablet {
+        margin-right: auto;
+        margin-left: auto;
+        width: 90%;
+    }
     @media @mobile {
-        height: 200px;
+        width: 100%;
+        height: 300px;
         display: flex;
-        flex-flow: column wrap;
-        border: 2px solid red;
+        flex-flow: column nowrap;
+        //border: 2px solid red;
         align-items: space-evenly;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
         }
     h1 {
         font-size: 6rem;
@@ -19,9 +27,10 @@ header {
         color: @white;
         @media @mobile {
             font-size: 4rem;
-            width: 100%;
             text-align: center;
-            border: 2px solid blue;
+            //border: 2px solid blue;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
     .loginBtn {
@@ -32,9 +41,12 @@ header {
         // border: 1px solid @azureishWhite;
         color: @blackOlive;
         @media @mobile {
+            background-color: @blackOlive;
             text-align: center;
-            border: 2px solid yellow;
-            width: 40%;
+            //border: 2px solid yellow;
+            width: 25%;
+            height: 60px;
+            margin-top: 8rem;
         }
         button {
             background-color: @pearlAqua;
@@ -45,71 +57,81 @@ header {
             border-radius: 12px;
             border: 1px solid @azureishWhite;
             @media @mobile {
-                width: 40%;
-                border: 2px solid green;
+                width: 100%;
+                text-align: center;
+                height: 60px;
+                margin-top: 1rem;
+                //border: 2px solid green;
             }
         }
     }
 }
 .menu {
-    height: 600px;
-    width: 25%;
+    height: 700px;
+    width: 200px;
     opacity: 0.98;
-    position: absolute;
+    position: relative;
     z-index: 1;
     display: none;
-    border: 2px solid yellow;
-    align-items: center;
-    color: crimson;
 }    
 .menu-items {
     display: flex;
     flex-flow: column nowrap;
-    text-align: center;
-    align-items: right;
-    padding-top: 7rem;
-    height: 500px;
-    color: tan;
+    align-items: center;
+    margin: auto;
+    height: 100px;
     a {
         font-size: 2rem;
         color: @blackOlive;
+        background-color: @pearlAqua;
+        padding: 2rem 2rem 2rem 2rem;
+        border: 2px solid white;
+        width: 45%;
+        text-align: center;
         text-decoration: none;
         &:hover{
-            color: coral;
+            color: @blackOlive;
         }
-        @media @mobile{
+        @media @mobile {
             width: 100%;
-            height: 100px;
+            height: 200px;
             font-size: 2rem;
             color: @azureishWhite;
             text-align: center;
-            background-color: @blackOlive;
+            position: absolute;
         }
     }
-}
-.menu-button-close{
-    cursor: pointer;
-    margin-top: 0px;
-    margin-bottom: 2rem;
-    padding-top: 0px;
+    .menu-button-close {
+        cursor: pointer;
+        border: 2px solid @azureishWhite;
+        background-color: @pearlAqua;
+        position: relative;
+        @media @mobile {
+            background-color: @blackOlive;
+            height: 2.5rem;
+            position: absolute;
+        }
+    }
 }
 .menu-button {
     height: 3rem;
     cursor: pointer;
-    align-content: center;
     @media @mobile {
         background-color: @blackOlive;
-        
+        height: 2.5rem;
+        position: absolute;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 }
 .menu--open {
     display: block;
-    height: 600px;
+    height: 100px;
     padding-left: 1rem;
     padding-right: 1rem;
     justify-content: right;
-    border: 2px solid white;
-    background-color: @pearlAqua;
+    // border: 2px solid white;
+    // background-color: @pearlAqua;
     color: @blackOlive;
     @media @mobile {
         height: 200px;
